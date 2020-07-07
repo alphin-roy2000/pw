@@ -4,54 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alphin Roy-Personal Webpage</title>
-    <link rel="stylesheet" href="AR personalpage files/style.css">
-
+    <link rel="icon" type="image/png" href="./AR wepage assets/titleicon.png">
+    <link rel="stylesheet" href="./AR wepage assets/style.css">
+    <link rel="stylesheet" href="./AR wepage assets/js01.js">
+    <link rel="stylesheet/scss" href="./AR wepage assets/css01.scss">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>Alphin Roy</title>
 </head>
 
 <body>
-    <div class="box1">
-        <div class="background"><header>
-            <div class="logo">
+    <div class="site-main">
+        <!------------------------------------Section 1------------------------------------------------->
+        <section class="section1">
+            <div class="left-side">
+                
+                <nav class="left-nav">
+                    <div class="logo"><a href=""><img src="./AR wepage assets/logo.svg" width="50px" alt=""></a></div>
+                    <div class="burger-display">
+                        <div class="burger burger-squeeze">
+                            <div class="burger-lines"></div>
+                        </div>
+                    </div>
+                    <div class="menu-overlay"></div>
+                   
+                    <div class="logo-nav-display"><img src="./AR wepage assets/logo.svg" width="50px" alt=""></div>
+                    <hr class="ar-below-line">
+                    <ul class="topnav" >
+                       
+                        <li><a class="active" href="">Home</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <!-- <li><a href=""></a></li> -->
+                    </ul>
+                </nav>
+                <div class="name-display">
+                    <h1 class="hi-there">Hey I'm Alphin!</h1>
+                    <h2 class="quote">"Everything is connected" 😅</h2>
+                </div>
+
+
+
                
-                    <a href="https://www.google.com"><img src="./AR personalpage files/arlogo.svg"  alt=""></a>
+
+
+
+                <div class="navtobottom">
+                    <ul>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li></li>
+                        <li><a href="#contact">Contacts</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="navtobottomarrow">
+                    <div id="section07" class="demo">
+                        <a href="#aboutme"><span></span><span></span><span></span></a>
+                    </div>
+                </div>
+
+            
 
             </div>
-            
-            <div class="menu-overlay"></div>
-    <!-- <div class="menu">
-        
-        <div class="menu-list">
-            <a href="https://www.google.com/">Link 1</a><br>
-            <a href="#">Link 2</a><br>
-            <a href="#">Link 3</a><br>
-            <a href="#">Link 4</a><br>
-        </div>
-    </div> -->
-   <div class="pos"><div class="hamburger-menu-wrapper">
-    <button class="hamburger-menu">
-        <span>toggle menu</span>
-    </button>
-</div>
-        <nav class="menu">
-            <div class="menu-list"><ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Portfolio</a> </li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Photography page</a></li>
-            </ul></div>
-            
-        </nav></div>
+            <div class="right-side">
+                <div class="mypic"><img src="./AR wepage assets/mine.jpg" alt=""></div>
+                <div class="socialmedia1">
+                    <!-- <h4>Checkout</h4>  -->
+                    <a class="btn fb" href="https://www.facebook.com/alphin.roy" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn twitter" href="https://twitter.com/alphinroy" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn google" href="mailto:alphinroy430@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a class="btn insta" href="https://www.instagram.com/alphin_roy2000/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn youtube"
+                        href="https://www.youtube.com/channel/UCqIgEl7cnKF3sa2m2lw3Euw?view_as=subscriber" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
 
-    
-        </header></div>
-        
-        
+            </div>
+
+
+        </section>
+        <section class="aboutme" id="aboutme"></section>
+        <footer class="contactclss" id="contact">
+            <div class="leftfooter"></div>
+            <div class="center"></div>
+            <div class="rightfooter"></div>
+        </footer>
+
     </div>
-    <div class="content1"></div>
-    <div></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<script src="AR personalpage files/js01.js"></script>
+    
+
+    <script>document.addEventListener("DOMContentLoaded", function (event) {
+            const list = document.getElementsByClassName('burger')
+
+            for (const element of list)
+                element.addEventListener('click', function (e) {
+                    element.classList.toggle('open');
+                });
+        });</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="./AR wepage assets/js01.js"></script>        
 </body>
 
 </html>
+
+ <!-- <svg viewBox="0 0 960 300">
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="80%">Alphin  Roy</text>
+                    </symbol>
+                
+                    <g class = "g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg> -->
+
+                <!-- <script>// Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml12');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        
+        anime.timeline({loop: false})
+          .add({
+            targets: '.ml12 .letter',
+            translateX: [40,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 500 + 30 * i
+         })//add({
+        //     targets: '.ml12 .letter',
+        //     translateX: [0,-30],
+        //     opacity: [1,0],
+        //     easing: "easeInExpo",
+        //     duration: 1100,
+        //     delay: (el, i) => 100 + 30 * i
+        //   })
+        ;</script> -->
+
+         <!-- <div class="mouse_scroll">
+
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div>
+                        <span class="m_scroll_arrows unu"></span>
+                        <span class="m_scroll_arrows doi"></span>
+                        <span class="m_scroll_arrows trei"></span>
+                    </div>
+            </div>
